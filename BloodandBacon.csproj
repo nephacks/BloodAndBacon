@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C20C9FF3-EED8-430A-80F2-1890A0D0A53A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>BloodandBacon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <LangVersion>10.0</LangVersion>
+    <ApplicationVersion>2.1.1.8</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Blood</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LangVersion>10.0</LangVersion>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LangVersion>10.0</LangVersion>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>10.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>10.0</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.Net" />
+    <Reference Include="Microsoft.Xna.Framework.Storage" />
+    <Reference Include="Microsoft.Xna.Framework.Video" />
+    <Reference Include="SkinnedModel">
+      <HintPath>lib\SkinnedModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Steamworks.NET">
+      <HintPath>lib\Steamworks.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ScreenManager.cs" />
+    <Compile Include="Cutty4.cs" />
+    <Compile Include="GameScreen.cs" />
+    <Compile Include="MenuScreen.cs" />
+    <Compile Include="setCamera.cs" />
+    <Compile Include="gamesettingScreen2.cs" />
+    <Compile Include="ControllerSettingsScreen.cs" />
+    <Compile Include="Quad.cs" />
+    <Compile Include="InstancedModel.cs" />
+    <Compile Include="ParticleSettings.cs" />
+    <Compile Include="ParticleSystem.cs" />
+    <Compile Include="dropSystem.cs" />
+    <Compile Include="headBlood2System.cs" />
+    <Compile Include="dummyOwner.cs" />
+    <Compile Include="shockSystem.cs" />
+    <Compile Include="LoadingScreen1.cs" />
+    <Compile Include="MenuEntry.cs" />
+    <Compile Include="LanderScreen.cs" />
+    <Compile Include="gamesettingScreen1.cs" />
+    <Compile Include="SpaceData.cs" />
+    <Compile Include="spaceStorage.cs" />
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="VertexGlobe.cs" />
+    <Compile Include="GlobeMaker.cs" />
+    <Compile Include="StringBuilderExtensions.cs" />
+    <Compile Include="dropSystemR.cs" />
+    <Compile Include="myGame.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="skullDupe.cs" />
+    <Compile Include="Princess4.cs" />
+    <Compile Include="bcSystem.cs" />
+    <Compile Include="gemDupe.cs" />
+    <Compile Include="dotSystem.cs" />
+    <Compile Include="headbuSystem.cs" />
+    <Compile Include="boarDupe6.cs" />
+    <Compile Include="BloodnBaconMP.cs" />
+    <Compile Include="slabDupe2.cs" />
+    <Compile Include="walletBoxBB.cs" />
+    <Compile Include="electricSystem.cs" />
+    <Compile Include="shock5System.cs" />
+    <Compile Include="ExtrasScreen.cs" />
+    <Compile Include="sparksSystem.cs" />
+    <Compile Include="lineSystem.cs" />
+    <Compile Include="InstancedModelReader.cs" />
+    <Compile Include="buildStars.cs" />
+    <Compile Include="walletScreen.cs" />
+    <Compile Include="GameData.cs" />
+    <Compile Include="GameStorage.cs" />
+    <Compile Include="rockSystem.cs" />
+    <Compile Include="humanPart.cs" />
+    <Compile Include="ropeDupe.cs" />
+    <Compile Include="boarDupe.cs" />
+    <Compile Include="multiply.cs" />
+    <Compile Include="audiosettingScreen.cs" />
+    <Compile Include="skidsSystem.cs" />
+    <Compile Include="explode1System.cs" />
+    <Compile Include="cloversSystem.cs" />
+    <Compile Include="sparkSystem.cs" />
+    <Compile Include="shock2System.cs" />
+    <Compile Include="Cursor.cs" />
+    <Compile Include="pumpDupe.cs" />
+    <Compile Include="followerSystem.cs" />
+    <Compile Include="follower2System.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Facility.cs" />
+    <Compile Include="PrefData.cs" />
+    <Compile Include="PrefStorage.cs" />
+    <Compile Include="dot2System.cs" />
+    <Compile Include="Lobby.cs" />
+    <Compile Include="SoundEffects.cs" />
+    <Compile Include="ProjectileTrailSettingsSystem.cs" />
+    <Compile Include="highvelocitySystem.cs" />
+    <Compile Include="heartsSystem.cs" />
+    <Compile Include="ExplosionSettingsSystem.cs" />
+    <Compile Include="Class3.cs" />
+    <Compile Include="messagebox.cs" />
+    <Compile Include="gemstruct.cs" />
+    <Compile Include="farmerSpit.cs" />
+    <Compile Include="spark2System.cs" />
+    <Compile Include="packetHandler.cs" />
+    <Compile Include="Princess.cs" />
+    <Compile Include="VertexMultitextured.cs" />
+    <Compile Include="tmake.cs" />
+    <Compile Include="astrobindings.cs" />
+    <Compile Include="smokerSystem.cs" />
+    <Compile Include="redpixieSystem.cs" />
+    <Compile Include="Interface.cs" />
+    <Compile Include="Overlay.cs" />
+    <Compile Include="rockstruct.cs" />
+    <Compile Include="remotePlayer.cs" />
+    <Compile Include="gunsmokeSystem.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="vietnamSystem.cs" />
+    <Compile Include="goreDupe.cs" />
+    <Compile Include="packetSender.cs" />
+    <Compile Include="explodeDupe2.cs" />
+    <Compile Include="Workshop.cs" />
+    <Compile Include="cauldron.cs" />
+    <Compile Include="PauseMenuScreen.cs" />
+    <Compile Include="MiniGame.cs" />
+    <Compile Include="Background.cs" />
+    <Compile Include="ScreenState.cs" />
+    <Compile Include="lampSystem.cs" />
+    <Compile Include="chatbox.cs" />
+    <Compile Include="bitSystem.cs" />
+    <Compile Include="caldDupe.cs" />
+    <Compile Include="webDupe.cs" />
+    <Compile Include="titles.cs" />
+    <Compile Include="MainMenuScreen.cs" />
+    <Compile Include="streaksSystem.cs" />
+    <Compile Include="spitSystem.cs" />
+    <Compile Include="ExplosionSmokeSettingsSystem.cs" />
+    <Compile Include="explode2System.cs" />
+    <Compile Include="shock3System.cs" />
+    <Compile Include="debrisDupe.cs" />
+    <Compile Include="batDupe.cs" />
+    <Compile Include="SmokePlumeSettingsSystem.cs" />
+    <Compile Include="greenpixieSystem.cs" />
+    <Compile Include="follower3System.cs" />
+    <Compile Include="explodeEdgeSystem.cs" />
+    <Compile Include="cloud1System.cs" />
+    <Compile Include="Lander.cs" />
+    <Compile Include="debrisBloodSystem.cs" />
+    <Compile Include="BloodnBacon.cs" />
+    <Compile Include="localPlayer.cs" />
+    <Compile Include="explodeDupe.cs" />
+    <Compile Include="pumpkins.cs" />
+    <Compile Include="OptionsScreen.cs" />
+    <Compile Include="OptionsScreen2.cs" />
+    <Compile Include="Rover.cs" />
+    <Compile Include="tracerxSystem.cs" />
+    <Compile Include="dustSystem.cs" />
+    <Compile Include="slabDupe.cs" />
+    <Compile Include="InstancedModelPart.cs" />
+    <Compile Include="astroDupe.cs" />
+    <Compile Include="Construction.cs" />
+    <Compile Include="MessageBoxScreen2.cs" />
+    <Compile Include="TrialData.cs" />
+    <Compile Include="TrialStorage.cs" />
+    <Compile Include="remotePlayer4.cs" />
+    <Compile Include="rocketSystem.cs" />
+    <Compile Include="dropSystemG.cs" />
+    <Compile Include="goldenkey.cs" />
+    <Compile Include="spark3System.cs" />
+    <Compile Include="BloodnBacon3P.cs" />
+    <Compile Include="Class4.cs" />
+    <Compile Include="objDupe.cs" />
+    <Compile Include="invDupe.cs" />
+    <Compile Include="vomitDupe.cs" />
+    <Compile Include="chunkDupe.cs" />
+    <Compile Include="Class5.cs" />
+    <Compile Include="enemynpc.cs" />
+    <Compile Include="achieve.cs" />
+    <Compile Include="Cutty.cs" />
+    <Compile Include="BloodnBacon4P.cs" />
+    <Compile Include="videosettingsScreen.cs" />
+    <Compile Include="LoadingScreen2.cs" />
+    <Compile Include="dotSystem2.cs" />
+    <Compile Include="astro.cs" />
+    <Compile Include="dupeItem.cs" />
+    <Compile Include="Randoms.cs" />
+    <Compile Include="skullkins.cs" />
+    <Compile Include="BloodnBacon4PT.cs" />
+    <Compile Include="RotoTyper.cs" />
+    <Compile Include="setCamera2.cs" />
+    <Compile Include="CamerasScreen2.cs" />
+    <Compile Include="explode3System.cs" />
+    <Compile Include="bluepixieSystem.cs" />
+    <Compile Include="rockBreak.cs" />
+    <Compile Include="InputState.cs" />
+    <Compile Include="headBloodSystem.cs" />
+    <Compile Include="buddyBlood.cs" />
+    <Compile Include="PlayerIndexEventArgs.cs" />
+    <Compile Include="shock4System.cs" />
+    <Compile Include="enemyDupe.cs" />
+    <Compile Include="MediaScreen.cs" />
+    <Compile Include="BloodnBacon6P.cs" />
+    <Compile Include="Cow.cs" />
+    <Compile Include="Notes.cs" />
+    <Compile Include="gamesettingScreen3.cs" />
+    <Compile Include="CamerasScreen.cs" />
+    <Compile Include="tracerx2System.cs" />
+    <Compile Include="starburstSystem.cs" />
+    <Compile Include="FireSettingsSystem.cs" />
+    <Compile Include="cloud2System.cs" />
+    <Compile Include="MoonSurface.cs" />
+    <Compile Include="GameplayScreen.cs" />
+    <Compile Include="saves\saveFacility.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft\Xna\Framework.RuntimeProfile" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
