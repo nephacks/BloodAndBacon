@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.MainMenu
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -20,6 +14,9 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
+#pragma warning disable CS0414
+#pragma warning disable CS0169
+#pragma warning disable CS0649
 #nullable disable
 namespace Blood
 {
@@ -4868,7 +4865,7 @@ namespace Blood
       this.drawHelper("credits", 5, 3, 18f);
       this.drawHelper("back", 5, 4, 18f);
       if (this.sc.workshopNum == this.sc.workshop.fileSize)
-        ;
+        return;
       if (!this.covered && this.sc.Game.IsMouseVisible)
       {
         this.queryButton(this.star1, 12);

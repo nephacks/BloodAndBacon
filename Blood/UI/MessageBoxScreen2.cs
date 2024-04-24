@@ -1,16 +1,14 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.MessageBoxScreen2
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 
+#pragma warning disable CS0067
+#pragma warning disable CS0414
+#pragma warning disable CS0649
+#pragma warning disable CS0169
 #nullable disable
 namespace Blood
 {
@@ -140,13 +138,11 @@ namespace Blood
       if (flag == 1)
       {
         this.includeYesNo = true;
-        this.message = this.message;
       }
       if (flag == 9)
       {
         this.includeYesNo = false;
         this.includeOkay = true;
-        this.message = this.message;
       }
       if (flag == 2)
       {
@@ -175,7 +171,6 @@ namespace Blood
       if (flag == 1)
       {
         this.includeYesNo = true;
-        this.message = this.message;
       }
       if (flag == 2)
       {
@@ -262,7 +257,6 @@ namespace Blood
           this.flag = 16;
           this.techYesNo = true;
         }
-        this.message = this.message;
       }
       if (this.flag == 6)
       {

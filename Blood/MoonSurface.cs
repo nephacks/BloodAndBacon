@@ -1,16 +1,12 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.MoonSurface
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
+#pragma warning disable CS0649
+#pragma warning disable CS0169
 #nullable disable
 namespace Blood
 {
@@ -287,7 +283,7 @@ namespace Blood
             if (num2 > 30)
               num2 = 30;
             if (31 - num2 < 1)
-              ;
+              return;
             heightData[index4, index1] = a;
             heightData[index4, index1] += (int) this.high[index4 + index1 * num1] / 10;
             this.buildtexture(ref heightData, ref texData, index4, index1);

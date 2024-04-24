@@ -1,19 +1,13 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.CamerasScreen
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using System;
 
 #nullable disable
 namespace Blood
 {
-  internal class CamerasScreen : MenuScreen
+  internal class CamerasScreen2 : MenuScreen
   {
-    public CamerasScreen()
-      : base("Camera Settings")
+    public CamerasScreen2()
+      : base("Camera Settings2")
     {
       MenuEntry menuEntry1 = new MenuEntry("CAM 01");
       MenuEntry menuEntry2 = new MenuEntry("CAM 02");
@@ -29,19 +23,19 @@ namespace Blood
     private void cam1Selected(object sender, PlayerIndexEventArgs e)
     {
       this.ScreenManager.drawflag = 0;
-      this.ScreenManager.AddScreen((GameScreen) new setCamera(1), new PlayerIndex?(e.PlayerIndex));
+      this.ScreenManager.AddScreen((GameScreen) new setCamera2(1), new PlayerIndex?(e.PlayerIndex));
     }
 
     private void cam2Selected(object sender, PlayerIndexEventArgs e)
     {
       this.ScreenManager.drawflag = 0;
-      this.ScreenManager.AddScreen((GameScreen) new setCamera(2), new PlayerIndex?(e.PlayerIndex));
+      this.ScreenManager.AddScreen((GameScreen) new setCamera2(2), new PlayerIndex?(e.PlayerIndex));
     }
 
     private void cam3Selected(object sender, PlayerIndexEventArgs e)
     {
       this.ScreenManager.drawflag = 0;
-      this.ScreenManager.AddScreen((GameScreen) new setCamera(3), new PlayerIndex?(e.PlayerIndex));
+      this.ScreenManager.AddScreen((GameScreen) new setCamera2(3), new PlayerIndex?(e.PlayerIndex));
     }
   }
 }

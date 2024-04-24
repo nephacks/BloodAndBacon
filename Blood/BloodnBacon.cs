@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.BloodnBacon
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -21,6 +15,10 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
+#pragma warning disable CS0219
+#pragma warning disable CS0649
+#pragma warning disable CS0414
+#pragma warning disable CS0169
 #nullable disable
 namespace Blood
 {
@@ -5432,8 +5430,8 @@ namespace Blood
         this.sc.loadMoment = "Load Rendertargets1";
       }
       if (this.sc.GraphicsDevice.PresentationParameters.MultiSampleCount > 2)
-        ;
-      this.target1 = new RenderTarget2D(this.sc.GraphicsDevice, 600, 600, true, SurfaceFormat.Color, DepthFormat.None, 0, RenderTargetUsage.DiscardContents);
+                return;
+            this.target1 = new RenderTarget2D(this.sc.GraphicsDevice, 600, 600, true, SurfaceFormat.Color, DepthFormat.None, 0, RenderTargetUsage.DiscardContents);
       this.target2 = new RenderTarget2D(this.sc.GraphicsDevice, 600, 600, true, SurfaceFormat.Color, DepthFormat.None, 0, RenderTargetUsage.DiscardContents);
       this.glowTarget = new RenderTarget2D(this.sc.GraphicsDevice, 1000, 600, false, SurfaceFormat.Color, DepthFormat.None);
       if (this.sc.viewGarbage)
@@ -8925,7 +8923,6 @@ namespace Blood
         this.tempConduct.frame = n.dupe[i].frame1;
         this.tempConduct.time = this.launchTime;
         this.tempConduct.died = died;
-        this.tempConduct.veloc = this.tempConduct.veloc;
       }
       if (act == 6)
       {
@@ -15298,7 +15295,7 @@ label_324:
           if (this.atRedSkull1)
           {
             if (this.sc.tusk1 == 1 || this.sc.tusk2 == 1)
-              ;
+                            return;
             if (this.sc.redskull1 != 1 && this.sc.redskull2 != 1 && this.sc.redskull3 != 1)
             {
               this.sc.redskull1 = 1;
@@ -15313,7 +15310,7 @@ label_324:
           if (this.atRedSkull2)
           {
             if (this.sc.tusk1 == 1 || this.sc.tusk2 == 1)
-              ;
+              return;
             if (this.sc.redskull1 != 1 && this.sc.redskull2 != 1 && this.sc.redskull3 != 1)
             {
               this.sc.redskull2 = 1;
@@ -15328,7 +15325,7 @@ label_324:
           if (this.atRedSkull3)
           {
             if (this.sc.tusk1 == 1 || this.sc.tusk2 == 1)
-              ;
+              return;
             if (this.sc.redskull1 != 1 && this.sc.redskull2 != 1 && this.sc.redskull3 != 1)
             {
               this.sc.redskull3 = 1;

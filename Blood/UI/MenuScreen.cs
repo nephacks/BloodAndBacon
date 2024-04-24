@@ -1,16 +1,11 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.MenuScreen
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 
+#pragma warning disable CS0169
 #nullable disable
 namespace Blood
 {
@@ -595,7 +590,7 @@ namespace Blood
     {
       Vector2 mymouse = this.sc.mymouse;
       if (this.sc.fullmode)
-        ;
+        return;
       Vector2 vector2_1;
       if ((double) this.sc.aspectratio <= 1.0)
       {

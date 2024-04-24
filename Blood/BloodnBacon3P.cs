@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.BloodnBacon3P
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -21,6 +15,10 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
+#pragma warning disable CS0219
+#pragma warning disable CS0649
+#pragma warning disable CS0414
+#pragma warning disable CS0169
 #nullable disable
 namespace Blood
 {
@@ -4100,7 +4098,7 @@ namespace Blood
         this.sc.loadMoment = "Load Rendertargets1";
       }
       if (this.sc.GraphicsDevice.PresentationParameters.MultiSampleCount > 2)
-        ;
+        return;
       this.target1 = new RenderTarget2D(this.sc.GraphicsDevice, 600, 600, true, SurfaceFormat.Color, DepthFormat.None, 0, RenderTargetUsage.DiscardContents);
       this.target2 = new RenderTarget2D(this.sc.GraphicsDevice, 600, 600, true, SurfaceFormat.Color, DepthFormat.None, 0, RenderTargetUsage.DiscardContents);
       this.glowTarget = new RenderTarget2D(this.sc.GraphicsDevice, 1000, 600, false, SurfaceFormat.Color, DepthFormat.None);
@@ -7465,7 +7463,7 @@ namespace Blood
         this.tempConduct.frame = n.dupe[i].frame1;
         this.tempConduct.time = this.launchTime;
         this.tempConduct.died = died;
-        this.tempConduct.veloc = this.tempConduct.veloc;
+        
       }
       if (act == 6)
       {
@@ -7589,7 +7587,6 @@ namespace Blood
       int remIndex = cc.remIndex;
       int bodypart = (int) cc.bodypart;
       bool died = cc.died;
-      cc.time = cc.time;
       if (id > this.boar.dupe.Count - 1)
         return;
       if (died && this.sc.host && !localData)
@@ -8041,7 +8038,6 @@ namespace Blood
         int maxValue13 = -90;
         float num20 = 1000f;
         bool bleeds = true;
-        dupeItem.bleed = dupeItem.bleed;
         int boarGroup = n.dupe[id].boarGroup;
         bool flag6 = false;
         if (this.sc.boar1Variant == 2 && boarGroup == 1)
@@ -11753,7 +11749,7 @@ namespace Blood
         this.prevState = input.LastGamePadStates[(int) this.playerIndex];
         this.gamePad = input.CurrentGamePadStates[(int) this.playerIndex];
         if (!this.gamePad.IsConnected)
-          ;
+          return;
       }
       this.prevkeyState = input.lastKeyState;
       this.keyState = input.currentKeyState;
@@ -12460,7 +12456,7 @@ namespace Blood
         }
       }
       if (this.sc.gameState == 0)
-        ;
+        return;
       if (this.barnTriangle && (double) this.barnDoorslide.Z <= 0.0 && this.weAreOutdoors && this.sc.gameState != 2)
       {
         this.barnTriangle = false;
@@ -13626,7 +13622,7 @@ namespace Blood
       this.updateGore(ref this.pigchunk, 2000f);
       this.updateScreenSplat();
       if (!this.sc.host || this.sc.gameState != 0 || this.barnDoorOpen || this.weAreOutdoors)
-        ;
+        return;
       this.sendPacketThisFrame = false;
       ++this.framesSinceLastSend;
       if (this.framesSinceLastSend >= this.framesBetweenPackets)

@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.Lobby
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Steamworks;
 using System;
@@ -245,6 +239,7 @@ namespace Blood
           string str = SteamMatchmaking.GetLobbyData(lobbyid, "day");
           if (flag5)
             str = "1";
+#pragma warning disable CS0168
           try
           {
             if (str != "")
@@ -258,6 +253,7 @@ namespace Blood
           {
             num = 0;
           }
+#pragma warning restore CS0168
         }
       }
       return num;

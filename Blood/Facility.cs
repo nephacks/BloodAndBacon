@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.Facility
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -13,6 +7,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 
+#pragma warning disable CS0414
+#pragma warning disable CS0169
 #nullable disable
 namespace Blood
 {
@@ -1153,7 +1149,7 @@ namespace Blood
       {
         bool flag = this.pointer[num] >= 290 && this.pointer[num] <= 291;
         if (this.pointer[num] > 299)
-          ;
+          return;
         Vector3 mov = Vector3.Transform(Vector3.Zero, this.clickLocation[num]);
         if ((floor != 1 || (double) mov.Y < -460.0) && (floor != 2 || (double) mov.Y >= -460.0 && (double) mov.Y < 0.0) && (floor != 3 || (double) mov.Y >= 0.0 && (double) mov.Y < 460.0) && (floor != 4 || (double) mov.Y >= 460.0 && (double) mov.Y < 920.0) && (floor != 5 || (double) mov.Y >= 920.0 && (double) mov.Y < 1380.0) && (floor != 6 || (double) mov.Y >= 1380.0 && (double) mov.Y < 1840.0))
         {
@@ -1302,7 +1298,7 @@ namespace Blood
         this.pointer[tempGate] += 10;
       }
       if (this.pointer[tempGate] == 101 || this.pointer[tempGate] == 111 || tempGate > 0)
-        ;
+        return;
       if (this.pointer[tempGate] != 110 && this.pointer[tempGate] != 111 || this.closeGate.Contains(tempGate))
         return;
       this.closeGate.Add(tempGate);
@@ -1615,7 +1611,7 @@ namespace Blood
       {
         int click = this.clickList[index];
         if (this.pointer[click] >= 290)
-          ;
+          return;
         if (this.pointer[click] > 0 && (this.clickListBool[index] || !Facility.inFacility && click == this.sc.frontDoor))
         {
           if (this.pointer[click] >= 100 && this.pointer[click] <= 150)
@@ -1628,7 +1624,7 @@ namespace Blood
           if (this.pointer[click] >= 300 && this.pointer[click] <= 390)
           {
             if (this.pointer[click] == 351)
-              ;
+              return;
             int num = this.doorTag[click] % 1000;
             if (num % 10 == 4)
               this.drawChest(this.vaultChest2, this.clickLocation[click], this.spiderchestRect, tech, click, this.pointer[click]);
@@ -1748,7 +1744,7 @@ namespace Blood
           {
             int click = this.clickList[index];
             if (this.pointer[click] >= 290)
-              ;
+              return;
             if (this.pointer[click] > 0 && (this.clickListBool[index] || !Facility.inFacility && click == this.sc.frontDoor))
             {
               if (this.pointer[click] >= 100 && this.pointer[click] <= 150)
@@ -1762,7 +1758,7 @@ namespace Blood
               if (this.pointer[click] >= 300 && this.pointer[click] <= 390)
               {
                 if (this.pointer[click] == 351)
-                  ;
+                  return;
                 int num2 = this.doorTag[click] % 1000;
                 if (num2 % 10 == 4)
                   this.drawChest2(this.vaultChest2, this.clickLocation[click], this.spiderchestRect, tech, click, this.pointer[click]);
@@ -1848,7 +1844,7 @@ namespace Blood
         {
           int click = this.clickList[index];
           if (this.pointer[click] >= 290)
-            ;
+            return;
           if (this.pointer[click] > 0 && (this.clickListBool[index] || !Facility.inFacility && click == this.sc.frontDoor))
           {
             if (this.pointer[click] >= 100 && this.pointer[click] <= 150 && click != this.sc.frontDoor)
@@ -1856,7 +1852,7 @@ namespace Blood
             if (this.pointer[click] >= 300 && this.pointer[click] <= 390)
             {
               if (this.pointer[click] == 351)
-                ;
+                return;
               int num3 = this.doorTag[click] % 1000;
               if (num3 % 10 == 4)
                 this.drawChest(this.vaultChest2, this.clickLocation[click], this.spiderchestRect, tech, click, this.pointer[click]);

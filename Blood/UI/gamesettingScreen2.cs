@@ -1,16 +1,10 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.gamesettingScreen1
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using System;
 
 #nullable disable
 namespace Blood
 {
-  internal class gamesettingScreen1 : MenuScreen
+  internal class gamesettingScreen2 : MenuScreen
   {
     private MenuEntry invertxMenuEntry;
     private MenuEntry invertyMenuEntry;
@@ -18,8 +12,8 @@ namespace Blood
     private MenuEntry ysenseMenuEntry;
     private MenuEntry vibro;
 
-    public gamesettingScreen1()
-      : base("Game Settings1")
+    public gamesettingScreen2()
+      : base("Game Settings2")
     {
       this.vibro = new MenuEntry(string.Empty);
       this.invertxMenuEntry = new MenuEntry(string.Empty);
@@ -31,6 +25,7 @@ namespace Blood
       this.invertyMenuEntry.Selected += new EventHandler<PlayerIndexEventArgs>(this.invertySelected);
       this.xsenseMenuEntry.Selected += new EventHandler<PlayerIndexEventArgs>(this.xsenseSelected);
       this.ysenseMenuEntry.Selected += new EventHandler<PlayerIndexEventArgs>(this.ysenseSelected);
+      this.vibro.Selected += new EventHandler<PlayerIndexEventArgs>(this.vibroSelected);
       this.MenuEntries.Add(this.vibro);
       this.MenuEntries.Add(this.invertxMenuEntry);
       this.MenuEntries.Add(this.invertyMenuEntry);
@@ -86,9 +81,14 @@ namespace Blood
         "9",
         "10"
       };
-      this.vibro.Text = "ROVER";
+      this.vibro.Text = "LANDER";
       this.vibro.Type = 1;
       this.vibro.Lists = new string[3]{ "", "", "" };
+    }
+
+    private void vibroSelected(object sender, PlayerIndexEventArgs e)
+    {
+      this.ScreenManager.vibroSetting = (int) this.vibro.Amount;
     }
 
     private void invertxSelected(object sender, PlayerIndexEventArgs e)
@@ -98,7 +98,7 @@ namespace Blood
         num = 1;
       if ((int) this.invertxMenuEntry.Amount == 1)
         num = -1;
-      this.ScreenManager.space_rinvertX = num;
+      this.ScreenManager.space_invertX = num;
     }
 
     private void invertySelected(object sender, PlayerIndexEventArgs e)
@@ -108,17 +108,17 @@ namespace Blood
         num = 1;
       if ((int) this.invertyMenuEntry.Amount == 1)
         num = -1;
-      this.ScreenManager.space_rinvertY = num;
+      this.ScreenManager.space_invertY = num;
     }
 
     private void xsenseSelected(object sender, PlayerIndexEventArgs e)
     {
-      this.ScreenManager.space_rsentivityX = MathHelper.Lerp(0.2f, 2f, this.xsenseMenuEntry.Amount / 10f);
+      this.ScreenManager.space_sentivityX = MathHelper.Lerp(0.2f, 2f, this.xsenseMenuEntry.Amount / 10f);
     }
 
     private void ysenseSelected(object sender, PlayerIndexEventArgs e)
     {
-      this.ScreenManager.space_rsentivityY = MathHelper.Lerp(0.2f, 2f, this.ysenseMenuEntry.Amount / 10f);
+      this.ScreenManager.space_sentivityY = MathHelper.Lerp(0.2f, 2f, this.ysenseMenuEntry.Amount / 10f);
     }
   }
 }

@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: Blood.ScreenManager
-// Assembly: BloodandBacon, Version=2.1.1.8, Culture=neutral, PublicKeyToken=null
-// MVID: F4C16F53-CCDA-4F28-8BE8-E2C669EABDFC
-// Assembly location: C:\Program Files (x86)\Steam\steamapps\common\Blood and Bacon\BloodandBacon_Slayed.exe
-
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -19,6 +13,10 @@ using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Windows.Forms;
 
+
+#pragma warning disable CS0219
+#pragma warning disable CS0414
+#pragma warning disable CS0169
 #nullable disable
 namespace Blood
 {
@@ -2166,7 +2164,7 @@ namespace Blood
       }
       catch
       {
-        origkey = origkey;
+        return;
       }
     }
 

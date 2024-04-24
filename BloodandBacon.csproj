@@ -77,7 +77,6 @@
     <Compile Include="Blood\astro.cs" />
     <Compile Include="Blood\astrobindings.cs" />
     <Compile Include="Blood\astroDupe.cs" />
-    <Compile Include="Blood\audiosettingScreen.cs" />
     <Compile Include="Blood\Background.cs" />
     <Compile Include="Blood\batDupe.cs" />
     <Compile Include="Blood\bcSystem.cs" />
@@ -94,8 +93,6 @@
     <Compile Include="Blood\buddyBlood.cs" />
     <Compile Include="Blood\buildStars.cs" />
     <Compile Include="Blood\caldDupe.cs" />
-    <Compile Include="Blood\CamerasScreen.cs" />
-    <Compile Include="Blood\CamerasScreen2.cs" />
     <Compile Include="Blood\cauldron.cs" />
     <Compile Include="Blood\chatbox.cs" />
     <Compile Include="Blood\chunkDupe.cs" />
@@ -109,7 +106,6 @@
     <Compile Include="Blood\cloud2System.cs" />
     <Compile Include="Blood\cloversSystem.cs" />
     <Compile Include="Blood\Construction.cs" />
-    <Compile Include="Blood\ControllerSettingsScreen.cs" />
     <Compile Include="Blood\Cow.cs" />
     <Compile Include="Blood\Cursor.cs" />
     <Compile Include="Blood\Cutty.cs" />
@@ -144,11 +140,6 @@
     <Compile Include="Blood\follower3System.cs" />
     <Compile Include="Blood\followerSystem.cs" />
     <Compile Include="Blood\GameData.cs" />
-    <Compile Include="Blood\GameplayScreen.cs" />
-    <Compile Include="Blood\GameScreen.cs" />
-    <Compile Include="Blood\gamesettingScreen1.cs" />
-    <Compile Include="Blood\gamesettingScreen2.cs" />
-    <Compile Include="Blood\gamesettingScreen3.cs" />
     <Compile Include="Blood\GameStorage.cs" />
     <Compile Include="Blood\gemDupe.cs" />
     <Compile Include="Blood\gemstruct.cs" />
@@ -171,33 +162,21 @@
     <Compile Include="Blood\invDupe.cs" />
     <Compile Include="Blood\lampSystem.cs" />
     <Compile Include="Blood\Lander.cs" />
-    <Compile Include="Blood\LanderScreen.cs" />
     <Compile Include="Blood\lineSystem.cs" />
-    <Compile Include="Blood\LoadingScreen1.cs" />
-    <Compile Include="Blood\LoadingScreen2.cs" />
     <Compile Include="Blood\Lobby.cs" />
     <Compile Include="Blood\localPlayer.cs" />
-    <Compile Include="Blood\MainMenu.cs" />
-    <Compile Include="Blood\MainMenuScreen.cs" />
     <Compile Include="Blood\MediaScreen.cs" />
-    <Compile Include="Blood\MenuEntry.cs" />
-    <Compile Include="Blood\MenuScreen.cs" />
-    <Compile Include="Blood\messagebox.cs" />
-    <Compile Include="Blood\MessageBoxScreen2.cs" />
     <Compile Include="Blood\MiniGame.cs" />
     <Compile Include="Blood\MoonSurface.cs" />
     <Compile Include="Blood\multiply.cs" />
     <Compile Include="Blood\myGame.cs" />
     <Compile Include="Blood\Notes.cs" />
     <Compile Include="Blood\objDupe.cs" />
-    <Compile Include="Blood\OptionsScreen.cs" />
-    <Compile Include="Blood\OptionsScreen2.cs" />
     <Compile Include="Blood\Overlay.cs" />
     <Compile Include="Blood\packetHandler.cs" />
     <Compile Include="Blood\packetSender.cs" />
     <Compile Include="Blood\ParticleSettings.cs" />
     <Compile Include="Blood\ParticleSystem.cs" />
-    <Compile Include="Blood\PauseMenuScreen.cs" />
     <Compile Include="Blood\PlayerIndexEventArgs.cs" />
     <Compile Include="Blood\PrefData.cs" />
     <Compile Include="Blood\PrefStorage.cs" />
@@ -253,18 +232,42 @@
     <Compile Include="Blood\tracerxSystem.cs" />
     <Compile Include="Blood\TrialData.cs" />
     <Compile Include="Blood\TrialStorage.cs" />
+    <Compile Include="Blood\UI\audiosettingScreen.cs" />
+    <Compile Include="Blood\UI\CamerasScreen.cs" />
+    <Compile Include="Blood\UI\CamerasScreen2.cs" />
+    <Compile Include="Blood\UI\ControllerSettingsScreen.cs" />
+    <Compile Include="Blood\UI\GameplayScreen.cs" />
+    <Compile Include="Blood\UI\GameScreen.cs" />
+    <Compile Include="Blood\UI\gamesettingScreen1.cs" />
+    <Compile Include="Blood\UI\gamesettingScreen2.cs" />
+    <Compile Include="Blood\UI\gamesettingScreen3.cs" />
+    <Compile Include="Blood\UI\LanderScreen.cs" />
+    <Compile Include="Blood\UI\LoadingScreen1.cs" />
+    <Compile Include="Blood\UI\LoadingScreen2.cs" />
+    <Compile Include="Blood\UI\MainMenu.cs" />
+    <Compile Include="Blood\UI\MainMenuScreen.cs" />
+    <Compile Include="Blood\UI\MenuEntry.cs" />
+    <Compile Include="Blood\UI\MenuScreen.cs" />
+    <Compile Include="Blood\UI\messagebox.cs" />
+    <Compile Include="Blood\UI\MessageBoxScreen2.cs" />
+    <Compile Include="Blood\UI\OptionsScreen.cs" />
+    <Compile Include="Blood\UI\OptionsScreen2.cs" />
+    <Compile Include="Blood\UI\PauseMenuScreen.cs" />
+    <Compile Include="Blood\UI\walletScreen.cs" />
     <Compile Include="Blood\VertexGlobe.cs" />
     <Compile Include="Blood\VertexMultitextured.cs" />
     <Compile Include="Blood\videosettingsScreen.cs" />
     <Compile Include="Blood\vietnamSystem.cs" />
     <Compile Include="Blood\vomitDupe.cs" />
     <Compile Include="Blood\walletBoxBB.cs" />
-    <Compile Include="Blood\walletScreen.cs" />
     <Compile Include="Blood\webDupe.cs" />
     <Compile Include="Blood\Workshop.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Blood\Microsoft\Xna\Framework.RuntimeProfile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
